@@ -1,0 +1,148 @@
+/* Theme Colors */
+:root {
+  --gothic-background-primary: hsl(270, 6%, 16%);
+  --gothic-background-primary-alt: hsl(270, 6%, 13%);
+  --gothic-background-secondary: hsl(270, 6%, 10%);
+  --gothic-background-secondary-alt: hsl(270, 6%, 7%);
+  --gothic-background-modifier-border: hsl(270, 6%, 20%);
+  --gothic-red: hsl(6, 54%, 31%);
+  --gothic-red-darker: hsl(6, 54%, 24%);
+  --gothic-blue: hsl(223, 31%, 31%);
+  --gothic-green: hsl(70, 29%, 31%);
+  --gothic-green-success: hsl(80, 40%, 45%);
+  --gothic-tan: hsl(33, 35%, 71%);
+  --gothic-stone: hsl(33, 4%, 61%);
+  --gothic-text-accent: hsl(6, 54%, 50%);
+  --gothic-text-accent-hover: hsl(6, 54%, 55%);
+  --gothic-interactive-accent: var(--gothic-red);
+  --gothic-interactive-accent-hover: hsl(9, 5%, 26%);
+  --gothic-text-highlight-bg: var(--gothic-green);
+  --gothic-text-selection: hsl(223, 31%, 20%);
+  --gothic-text-normal: hsl(33, 35%, 87%);
+  --gothic-text-muted: hsl(33, 35%, 78%);
+  --gothic-text-faint: var(--gothic-tan);
+  --gothic-text-on-accent: var(--gothic-text-normal);
+  --gothic-interactive-normal: hsl(270, 6%, 22%);
+  --gothic-interactive-hover: hsl(270, 6%, 26%);
+  --gothic-scrollbar-active-thumb-bg: rgba(219, 201, 179, 0.3);
+  --gothic-scrollbar-bg: rgba(219, 201, 179, 0.1);
+  --gothic-scrollbar-thumb-bg: rgba(219, 201, 179, 0.2);
+  --gothic-text-error: hsl(6, 64%, 41%);
+  --gothic-text-error-hover: hsl(6, 64%, 34%);
+  --gothic-border-radius-s: 2px;
+  --gothic-border-radius-m: 4px;
+  --gothic-border-radius-l: 8px;
+  --gothic-background-modifier-form-field: rgba(51, 48, 54, 0.2);
+  --gothic-background-modifier-form-field-highlighted: rgba(51, 48, 54, 0.3);
+}
+
+.theme-dark {
+  --background-primary: var(--gothic-background-primary);
+  --background-primary-alt: var(--gothic-background-primary-alt);
+  --background-secondary: var(--gothic-background-secondary);
+  --background-secondary-alt: var(--gothic-background-secondary-alt);
+  --background-modifier-border: var(--gothic-background-modifier-border);
+  --background-modifier-form-field: var(
+    --gothic-background-modifier-form-field
+  );
+  --background-modifier-form-field-highlighted: var(
+    --gothic-background-modifier-form-field-highlighted
+  );
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: var(--gothic-green-success);
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  --text-accent: var(--gothic-text-accent);
+  --text-accent-hover: var(--gothic-text-accent-hover);
+  --text-normal: var(--gothic-text-normal);
+  --text-muted: var(--gothic-text-muted);
+  --text-muted-rgb: 219, 201, 179;
+  --text-faint: var(--gothic-text-faint);
+  --text-error: var(--gothic-text-error);
+  --text-error-hover: var(--gothic-text-error-hover);
+  --text-highlight-bg: var(--gothic-text-highlight-bg);
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: var(--gothic-text-selection);
+  --text-on-accent: var(--gothic-text-on-accent);
+  --interactive-normal: var(--gothic-interactive-normal);
+  --interactive-hover: var(--gothic-interactive-hover);
+  --interactive-accent: var(--gothic-interactive-accent);
+  --interactive-accent-rgb: 122, 45, 36;
+  --interactive-accent-hover: var(--gothic-interactive-accent-hover);
+  --interactive-success: var(--gothic-green-success);
+  --scrollbar-active-thumb-bg: var(--gothic-scrollbar-active-thumb-bg);
+  --scrollbar-bg: var(--gothic-scrollbar-bg);
+  --scrollbar-thumb-bg: var(--gothic-scrollbar-thumb-bg);
+  --highlight-mix-blend-mode: lighten;
+}
+
+/************/
+/* Controls */
+/************/
+
+/* Dropdown */
+.dropdown {
+  border-width: 2px;
+  border-radius: var(--gothic-border-radius-s);
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%237A2D24%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+/* Toggles */
+.checkbox-container {
+  border-radius: 0px;
+  border: 2px solid var(--gothic-background-modifier-border);
+  box-shadow: inset 2px 2px 3px var(--background-secondary),
+    inset -2px -2px 3px var(--background-secondary);
+}
+.checkbox-container::after {
+  width: 14px;
+  height: 14px;
+  margin: 2px;
+  border-radius: var(--gothic-border-radius-s);
+  background-color: var(--gothic-stone);
+  transform: translateX(0px) rotate(45deg);
+  box-shadow: inset 1px 1px 4px var(--background-secondary),
+    inset -1px -1px 4px var(--background-secondary);
+}
+.checkbox-container.is-enabled::after {
+  transform: translateX(19.5px) rotate(45deg);
+}
+
+/* Range Inputs */
+input[type="range"].slider::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--gothic-border-radius-s);
+  background-color: var(--gothic-stone);
+  transform: rotate(45deg);
+  box-shadow: inset 1px 1px 3px var(--background-secondary),
+    inset -1px -1px 3px var(--background-secondary);
+}
+
+/*****************/
+/* UI Icons/Tabs */
+/*****************/
+.modal-close-button:hover,
+.workspace-tab-header:hover,
+.workspace-tab-header.is-active:hover,
+.workspace-ribbon-collapse-btn:hover,
+.side-dock-ribbon-tab:hover,
+.side-dock-ribbon-action:hover,
+.clickable-icon:hover {
+  color: var(--gothic-red);
+}
+
+/*************/
+/* Scrollbar */
+/*************/
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:active {
+  -webkit-border-radius: 0px;
+}
